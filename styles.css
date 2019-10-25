@@ -14,12 +14,6 @@ header{
   font-size: 36px;
 }
 
-.buttonclass {
-  //color: white;
-  //background-color: #0163AC;
-}
-
-
 .buttons {
   margin:25px;
 }
@@ -35,7 +29,6 @@ a{
   text-decoration: none;
   font-size: 18px;
 }
-
 
 .abstand{
   line-height: 35px;
