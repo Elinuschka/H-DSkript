@@ -18,7 +18,7 @@ header{
   margin:25px;
 }
 
-a{
+a, .but{
   border-radius: 10px;
   color:white;
   font-family: Bahnschrift SemiBold;
@@ -33,4 +33,13 @@ a{
 .abstand{
   line-height: 35px;
 }
+
+section{
+  padding-top: 10px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+
+}
+
 
