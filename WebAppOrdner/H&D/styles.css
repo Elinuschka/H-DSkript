@@ -1,0 +1,44 @@
+* {
+  margin:0px;
+  padding:0px;
+  text-align: center;
+}
+
+header{
+  height: 45px;
+  width: 100%;
+  background-color: #0163AC;
+  font-size: 25px;
+  color: white;
+  padding: auto;
+  font-size: 36px;
+}
+
+.buttons {
+  margin:25px;
+}
+
+a, .but{
+  border-radius: 10px;
+  color:white;
+  font-family: Bahnschrift SemiBold;
+  padding:10px;
+  background:#0163AC;
+  border:solid 0.5px #b8babc;
+  box-shadow:1px 1px 1px 1px #666;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.abstand{
+  line-height: 35px;
+}
+
+section{
+  padding-top: 10px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+
+}
+
