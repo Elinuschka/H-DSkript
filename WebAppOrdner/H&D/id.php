@@ -8,28 +8,21 @@
 </head>
 
 <?php
-    session_start();
-$_SESSION["job"]=$_POST["sent"];
+session_start();
+$_SESSION["job"] = $_POST["sent"];
 ?>
 
 <body>
 <header>
-    <p style="font-family: Bahnschrift SemiBold">H&D  </p>
+<?php echo $_POST["sent"]; ?>
 </header>
-<p style="font-family: Bahnschrift SemiBold">
-<?php
-echo $_POST["sent"];
-?></p>
-<div style="margin: 50px">
+<div>
     <form method="get" action="Fragebogen.php">
+        <p>Bitte geben sie die Bewerber-ID ein</p>
         ID:
-        <input type="text" name="id" />
-        <button type="submit" name="job" > Absenden </button>
+        <input type="text" name="id"/>
+        <button type="submit" name="job"> Absenden</button>
     </form>
-
-
 </div>
-
-
 </body>
 </html>

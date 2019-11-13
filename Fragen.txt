@@ -1,7 +1,0 @@
-Wie viel ist 1+1? $1;f$2;r$3;f$4;f
-§
-Wo liegt Berlin? $Deutschland;r$Frankreich;f$Belgien;f$Saudi-Arabien;f
-§
-Von welchem Land ist Donald Trump Präsident? $Bolivien;f$Deutschland;f$Türkei;f$Nordkorea;f$USA;r
-§
-Wo liegt Berlin? $Deutschland;r$Deutschland;r$Frankreich;f$Belgien;f$Saudi-Arabien;f
