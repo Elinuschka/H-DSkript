@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title></title>
+<meta name="author" content="Rene">
+<meta name="editor" content="html-editor phase 5">
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#FF0000" alink="#FF0000" vlink="#FF0000">
+<?php
+// Sitzung starten, damit der Benutzer eingeloggt bleibt
+session_start();
+
+if (isset($_POST['submit'])) {
+
+    include 'db.html"';
+
+    $user = mysqli_real_escape_string($connection, $_POST['user']);
+    $password = mysqli_real_escape_string($connection, $_POST['password']);
+
+    // Error handlers
+    // Existiert der Benutzername?
+    $sql = "SELECT * FROM users WHERE user = '$user'";
+    $result = mysqli_query($connection, $sql);
+    // mysqli_num_rows gibt die Anzahl an, wie oft die Bedingung von $sql erf&uuml;llt wird
+    $resultCheck = mysqli_num_rows($result);
+    if ($result < 1) {
+        // ?login=user gibt die Information an die index.php weiter
+        header("Location: ../index.html?login=user");
+        exit();
+    } else {
+        // Ist das Passwort korrekt?
+        // Die Variable row wird als Array mit den Informationen aus der Datenbank bef&uuml;llt
+        if ($row = mysqli_fetch_assoc($result)) {
+            // De-Hashing des Passwortes
+            // password_verify($password, $row['password']) gibt true oder false zur&uuml;ck
+            $hashedPassword = password_verify($password, $row['password']);
+            if ($hashedPassword == false) {
+                header("Location: ../index.html?login=password");
+                exit();
+              // elseif f&auml;ngt unvorhergesehene Fehler ab
+            } elseif($hashedPassword == true){
+              // Benutzer anmelden
+              $_SESSION['session_id'] = $row['id'];
+              $_SESSION['session_user'] = $row['user'];
+              $_SESSION['session_firstname'] = $row['firstname'];
+              $_SESSION['session_lastname'] = $row['lastname'];
+              header("Location: ../dashboard.html");
+              exit();
+            }
+        }
+    }
+
+} else {
+    header("Location: ../index.html?login=error");
+    exit();
+}
+</body>
+</html>

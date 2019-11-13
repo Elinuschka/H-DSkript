@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title></title>
+<meta name="author" content="Rene">
+<meta name="editor" content="html-editor phase 5">
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#FF0000" alink="#FF0000" vlink="#FF0000">
+<?php
+// IF-Abfrage, damit kein Inhalt angezeigt wird,
+// wenn ein User die URL err&auml;t
+if (isset($_POST['submit'])) {
+
+// Hier laden wir unsere Verbindung zur Datenbank
+  include_once 'db.html';
+
+// mysqli_real_escape_string sorgt daf&uuml;r, dass nur Text,
+// aber kein Code in die Datenbank kommt
+  $firstname = mysqli_real_escape_string($connection, $_POST['firstname']);
+  $lastname = mysqli_real_escape_string($connection, $_POST['lastname']);
+  $user = mysqli_real_escape_string($connection, $_POST['user']);
+  $password = mysqli_real_escape_string($connection, $_POST['password']);
+
+// Passwort verschl&uuml;sseln
+  $hashPassword = password_hash($password,PASSWORD_DEFAULT);
+
+// Jetzt wird der Nutzer in die Datenbank &uuml;bertragen
+  $sql = "INSERT INTO users (user, password, firstname, lastname) VALUES ('$user', '$hashPassword', '$firstname', '$lastname');";
+  $result = mysqli_query($connection, $sql);
+// Der User wird bei einem erfolgreichen Prozess auf
+// die sp&auml;ter noch erstellte Seite dashboard.php geschickt
+  header("Location: ../dashboard.html");
+  exit();
+
+
+} else {
+// Falls jemand die URL erraten hat, wird er durch
+// das else zum Registrierungsformular geschickt
+    header("Location: ../signup.html");
+    exit();
+}
+</body>
+</html>
