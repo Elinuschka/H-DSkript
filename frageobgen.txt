@@ -1,0 +1,166 @@
+Was ist bei Bezeichner zu beachten ? 
+
+Bezeichner starten mit zahlen. 
+Unterstrich oder Dollarzeichen dürfen kein Java keywort sein.-
+
+
+Für was kann static verwendet werden?
+
+Variablen -
+Methoden -
+Classen
+Konstanten
+
+
+Wie prüft man Integer ?
+
+== 
+equals -
+
+
+Was macht man mit Pipes ?
+
+Daten für das Model transformieren
+Transformieren von Daten für dei GUI -
+Filtern von Methoden
+
+
+Java 8 MIt welchen neuen Hilfsmitteln wurden die Collections erweitert?
+
+Stream-
+Static-
+Dynamic
+Default-
+Deserve.-
+
+
+Wie nennt man den Teilbereich der Informatik, der untersucht wie natürliche Sprache mit dem Computer verarbeitet werden kann?
+
+natürliche Linguistikinformatik
+informatische Linguistik
+Sprachinformatik
+Computerlinguistik -
+
+
+Wie wird ein infizierter Programmcode noch bezeichnet?
+
+Schlange
+Wurm -
+Zecke
+Blutsauger
+
+
+Wie viele Bit hat ein Byte?
+
+8 -
+16
+24
+36
+
+
+Was ist eine Ada?
+
+Virus
+Informationseinheit
+Programmiersprache -
+Dateierweiterung
+
+
+Was bedeutet Malware?
+
+Interne Software
+Berater-Software
+bösartige Schadsoftware -
+Cloud-basierte Software
+
+
+Was ist ein Regressionsbug?
+
+Fehler, der behoben wurde, in späteren Versionen aber wieder auftaucht -
+Fehler, der juristische Konsequenzen haben kann
+Fehler, der eine Gefahr für die Regierung darstellt
+Fehler, der einen großen finanziellen Schaden anrichtet
+
+
+Wie wird die kleinste digitale Informationseinheit bezeichnet?
+
+Byte
+Bit -
+Bill
+Bold
+
+
+
+Which class of IP address provides a maximum of only 254 host addresses per network ID?
+  A )   Class A  B )   Class B  C )   Class C-  D )   Class D
+
+
+How long is an IPv6 address?
+  A )   32 bits  B )   128 bytes  C )   64 bits  D )   128 bits-
+
+How often are BPDUs sent from a layer 2 device?
+  A )   Never  B )   Every 2 seconds-  C )   Every 10 minutes  D )   Every 30 seconds
+
+If you use either Telnet or FTP, which is the highest layer you are using to transmit data?
+  A )   Application-  B )   Presentation  C )   Session  D )   Transport
+
+
+Which of the following is private IP address?
+  A )   12.0.0.1  B )   168.172.19.39  C )   172.15.14.36  D )   192.168.24.43-
+
+What layer in the TCP/IP stack is equivalent to the Transport layer of the OSI model?
+  A )   Application  B )   Host-to-Host-  C )   Internet  D )   Network Access
+
+ Which of the following is the decimal and hexadecimal equivalents of the binary number 10011101?
+  A )   155, 0x9B  B )   157, 0x9D-  C )   159, 0x9F  D )   185, 0xB9
+
+Acknowledgements, sequencing, and flow control are characteristics of which OSI layer?
+  A )   Layer 2  B )   Layer 3  C )   Layer 4-  D )   Layer 7
+
+What is the main reason the OSI model was created?
+  A )   To create a layered model larger than the DoD mode  
+  B )   So application developers can change only one layer's protocols at a time  
+  C )   So different networks could communicate  -
+  D )   So Cisco could use the model
+
+
+Where is a hub specified in the OSI model?
+  A )   Session layer  B )   Physical layer  C )   Data Link layer  D )   Application layer
+
+What is a stub network?
+ A )   A network with more than one exit point  
+B )   A network with more than one exit and entry point  -
+C )   A network with only one entry and no exit point  
+D )   A network that has only one entry and exit point -
+
+
+Which protocol does Ping use?
+  A )   TCP  B )   ARP  C )   ICMP-  D )   BootP
+
+Which of the following allows a router to respond to an ARP request that is intended for a remote host?
+  A )   Gateway DP  B )   Reverse ARP (RARP)  C )   Proxy ARP-  D )   Inverse ARP (IARP)
+
+
+Which of the following protocols uses both TCP and UDP?
+  A )   FTP  B )   SMTP  C )   Telnet  D )   DNS-
+
+Which class of IP address has the most host addresses available by default?
+  A )   A-  B )   B  C )   C  D )   A and B
+
+
+
+How many broadcast domains are created when you segment a network with a 12-port switch?
+  A )   1-  B )   2  C )   5  D )   12
+
+
+Which layer 4 protocol is used for a Telnet connection?
+  A )   IP  B )   TCP-  C )   TCP/IP  D )   UDP
+
+
+
+What protocol is used to find the hardware address of a local device?
+  A )   RARP  B )   ARP-  C )   IP  D )   ICMP
+
+
+ Which protocol is used to send a destination network unknown message back to originating hosts?
+  A )   TCP  B )   ARP  C )   ICMP-  D )   BootP
