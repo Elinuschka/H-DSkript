@@ -15,8 +15,7 @@ $idCandidate = $_SESSION["id"];
 $job = $_SESSION["job"];
 ?>
 <header>
-    Test: <? phpecho($job); ?>
-    (m/w/d) ID: <?php echo($_SESSION["id"]); ?>
+    ID: <?php echo($_SESSION["id"]); ?>
 </header>
 
 <section>
@@ -55,7 +54,6 @@ $job = $_SESSION["job"];
                                 } else { ?>
                                     <input type="checkbox" name="allAnswers[]" value="f">
                                 <?php }                                            // in array namen vergeben  das array danach abfragen
-
                                 print_r($answer_arr[0]); ?>
                             </label>
                         </li>
@@ -78,11 +76,9 @@ $job = $_SESSION["job"];
 
 
             <?php
-
             //if(isset($_POST['werte'])){					//Absicherung wenn keins angeklickt
             if (!empty($_POST['allAnswers'])) {
                 $answer = $_POST['allAnswers'];
-
                 if (empty($answer)) {
                     echo("Sie haben keine Antworten angekreuzt");
                 } else {
@@ -103,11 +99,8 @@ $job = $_SESSION["job"];
                 }
                 $url = 'http://' . $_SERVER['HTTP_HOST'] . '/H&D/Ergebnis.php';  //URL herausfinden und weiterleiten an ErgebnisSeite
                 echo("<script>location.href = '$url . ?msg=$msg';</script>");
-
             }
             //}
-
-
             ?>
         </form>
     </div>

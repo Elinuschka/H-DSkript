@@ -1,7 +1,28 @@
 Wie viel ist 1+1? $1;f$2;r$3;f$4;f$1;f$2;r$3;f$4;f$
 §
-Wo liegt Berlin? $Deutschland;r$Frankreich;f$Belgien;f$Saudi-Arabien;f$
+Wo liegt Berlin? $Deutschland;r$Frankreich;f$Belgien;f$Saudi-Arabien;f$Saudi-Arabien;f$
 §
 Von welchem Land ist Donald Trump Präsident? $Bolivien;f$Deutschland;f$Türkei;f$Nordkorea;f$USA;r$
 §
 Wo liegt Berlin? $Deutschland;r$Deutschland;r$Frankreich;f$Belgien;f$Saudi-Arabien;f$
+
+
+
+woher kommen ids
+ausblick datenbank
+technischer user für email  hat php absender 
+Drop-Down Feld statt Buttons
+Textfelder dazu die nicht ausgewertet werden
+Alles mit in E-Mail, damit man schauen kann was er falsch un was richtig beantwortet hat
+pro seite eine frage
+html 5 - reiter momentan neu um das gut zu machen, zwischen fragen hin- und herspringen - CSS 3 - alles auf einer seite aber wirkt als wären es unterschiedliche
+wie viel würde das unternehmen dadruch sparen?
+kategorien um später zb Teamfähigkeit rauszulesen - Client, Web...
+konfic datei um einstelung zu endern
+seitenzahlen auf der folie
+zu viele punkte auf einer folie
+bilder mit rein in präsi
+stichpunkte
+unternehmensfolien verwenden
+wo kommen wir her
+startseite für bewerber

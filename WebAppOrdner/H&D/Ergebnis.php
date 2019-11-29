@@ -10,6 +10,5 @@
     Bewerbung Ende
 </header>
 Ihre Antworten wurden ausgwertet und versendet. Vielen Dank für Ihre Teilnahme!
-
 </body>
 </html>
