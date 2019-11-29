@@ -15,7 +15,7 @@
     Sobald Sie bereit sind Ihren Bewerbungstest zu starten, drücken sie auf START<br>
     Viel Erfolg!
     <form method="get" action="Fragebogen.php">
-	<input type ="hidden"  name="id" value="<?php echo $id; ?>"/>
+	<input type ="hidden"  name="id" value="<?php echo $_GET["id"]; ?>"/>
         <button type="submit">Start</button>
     </form>
 </div>
