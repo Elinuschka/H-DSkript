@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2c15a991-ac21-46b5-aacd-e0fd08e88a05" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dokumente/~$ojektdokumentation.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAppOrdner/H&amp;D mit Datenbank/Ergebnis.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAppOrdner/H&amp;D mit Datenbank/Fragebogen.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAppOrdner/H&amp;D mit Datenbank/Question.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAppOrdner/H&amp;D mit Datenbank/Willkommen.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAppOrdner/H&amp;D mit Datenbank/databaseConnection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAppOrdner/H&amp;D mit Datenbank/id.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAppOrdner/H&amp;D mit Datenbank/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAppOrdner/H&amp;D mit Datenbank/styles.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="C:/xampp/php" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1TKCwcQorZDpplYHdGkwuA1tuhU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="C:/xampp/htdocs" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+  </component>
+  <component name="RunManager">
+    <configuration name="H-DSkript" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner directory="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2c15a991-ac21-46b5-aacd-e0fd08e88a05" name="Default Changelist" comment="" />
+      <created>1573199640870</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1573199640870</updated>
+      <workItem from="1573199645023" duration="55000" />
+      <workItem from="1573199727749" duration="138000" />
+      <workItem from="1573200017687" duration="69000" />
+      <workItem from="1573200373517" duration="2090000" />
+      <workItem from="1573206474263" duration="1906000" />
+      <workItem from="1573803516977" duration="147000" />
+      <workItem from="1573803718397" duration="1363000" />
+      <workItem from="1573812672920" duration="1851000" />
+      <workItem from="1574408444069" duration="680000" />
+      <workItem from="1574410574499" duration="4535000" />
+      <workItem from="1575013114242" duration="7470000" />
+      <workItem from="1575618801413" duration="149000" />
+      <workItem from="1575619212476" duration="665000" />
+      <workItem from="1575621145222" duration="1111000" />
+      <workItem from="1575622804088" duration="469000" />
+    </task>
+    <task id="LOCAL-00001" summary="Projektdokumentation erstellt">
+      <created>1574414924809</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1574414924810</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Id bei übergabe angepasst">
+      <created>1575020492547</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1575020492547</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Projektdokumentation erstellt" />
+    <MESSAGE value="Id bei übergabe angepasst" />
+    <option name="LAST_COMMIT_MESSAGE" value="Id bei übergabe angepasst" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1575622639584">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1575622639584" />
+    <state x="679" y="316" key="git4idea.merge.GitPullDialog" timestamp="1575623259439">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="679" y="316" key="git4idea.merge.GitPullDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1575623259439" />
+  </component>
+</project>
