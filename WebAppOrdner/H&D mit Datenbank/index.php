@@ -4,29 +4,42 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>H&D Bewerbungsassystent</title>
     <LINK href="styles.css" rel="stylesheet" type="text/css">
+    <script language="javascript" type="text/javascript" src="js.js"></script>
 </head>
 <body>
 <header>
     H&D
 </header>
 
-<?php
-include_once 'databaseConnection.php';
+wählen Sie die gewünschte Stelle aus
+<br>
 
-try {
-    $pdo = db_connect();
-} catch (PDOException $e) {
-    echo "Database Error: " . $e->getMessage();
-}
+<div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Stellen</button>
+    <div id="myDropdown" class="dropdown-content">
+        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+        <?php
+        include_once 'databaseConnection.php';
 
-echo '<form method="post" action="id.php">';
-    // Jobs aus der Datenbank auslesen
-    $stmt = $pdo->query("SELECT * FROM jobs");
-    while ($row = $stmt->fetch()) {
-        echo '<button type="submit" name="sent" value="'.$row['name'].'">' . $row['name'] . '</button><br>';
-    }
-echo '</form>';
+        try {
+            $pdo = db_connect();
+        } catch (PDOException $e) {
+            echo "Database Error: " . $e->getMessage();
+        }
 
-// Close Connection
-$pdo = null;
-?>
+        echo '<form method="post" action="id.php">';
+        // Jobs aus der Datenbank auslesen
+        $stmt = $pdo->query("SELECT * FROM jobs");
+        while ($row = $stmt->fetch()) {
+            echo '<button class="button1" type="submit" name="sent" value="'.$row['name'].'">' . $row['name'] . '</button><br>';
+        }
+        echo '</form>';
+
+        // Close Connection
+        $pdo = null;
+        ?>
+    </div>
+
+</div>
+</body>
+
