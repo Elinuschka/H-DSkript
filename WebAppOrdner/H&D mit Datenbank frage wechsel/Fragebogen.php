@@ -6,7 +6,7 @@
     <title>Fragebogen</title>
     <LINK href="styles.css" rel="stylesheet" type="text/css">
     <script language="javascript" type="text/javascript" src="js.js"></script>
-
+    <script language="javascript" type="text/javascript" src="timer.js"></script>
 </head>
 <!--
 <header>
@@ -40,6 +40,12 @@
 </header>
 -->
 <body>
+<p id="timer">test</p>
+<p id="resttimer"></p>
+<script type="text/javascript">
+    setGesamtdauer(3000);
+    startTimer();
+</script>
 <?php
 require_once 'Question.php';
 require_once 'databaseConnection.php';
@@ -54,6 +60,14 @@ $job = $_SESSION["job"];
 <header>
     ID: <?php echo($_SESSION["id"]); ?>
 </header>
+
+<p class="zeit" id="timer"></p>
+<p style="display: none;" id="resttimer"></p>
+<script type="text/javascript">
+    setGesamtdauer(900);
+    startTimer();
+    runTimer();
+</script>
 
 <section>
     <form action="Fragebogen.php" method="post">
