@@ -14,10 +14,10 @@ $_SESSION["job"] = $_POST["sent"];
 
 <body>
 <header>
-<?php echo $_POST["sent"]; ?>
+    <?php echo $_POST["sent"]; ?>
 </header>
 <div>
-    <form method="get" action="Willkommen.php">
+    <form method="post" action="Willkommen.php">
         <p>Bitte geben sie die Bewerber-ID ein</p>
         ID:
         <input type="text" name="id"/>

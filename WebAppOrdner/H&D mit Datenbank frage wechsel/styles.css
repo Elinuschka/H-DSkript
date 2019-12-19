@@ -71,7 +71,9 @@ fieldset {
     border-bottom: 1px solid #ddd;
 }
 
-#myInput:focus {outline: 3px solid #ddd;}
+#myInput:focus {
+    outline: 3px solid #ddd;
+}
 
 .dropdown {
     position: relative;
@@ -92,20 +94,22 @@ fieldset {
     display: block;
 }
 
-.dropdown a:hover {background-color: #ddd;}
+.dropdown a:hover {
+    background-color: #ddd;
+}
 
-.show {display: block;}
+.show {
+    display: block;
+}
 
-.tabmenu
-{
+.tabmenu {
     width: 30%;
     position: relative;
     margin: 5px;
     display: flex;
 }
 
-.tab_top_active
-{
+.tab_top_active {
     float: left;
     border-style: solid;
     border-width: 1px;
@@ -120,8 +124,7 @@ fieldset {
     cursor: pointer;
 }
 
-.tab_top_passive
-{
+.tab_top_passive {
     float: left;
     border-style: solid;
     border-width: 1px;
@@ -135,8 +138,7 @@ fieldset {
     cursor: pointer;
 }
 
-.tab_box
-{
+.tab_box {
     float: left;
     border-style: solid;
     border-width: 1px;
@@ -146,15 +148,6 @@ fieldset {
     height: 100%;
 }
 
-.menu {
-
+.zeit {
+    margin-bottom: 30px;
 }
-
-/*
-section {
-    padding-top: 10px;
-    padding-bottom: 15px;
-    margin-bottom: 15px;
-    margin-top: 15px;
-}
- */

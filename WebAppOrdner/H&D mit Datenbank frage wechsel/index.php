@@ -6,35 +6,34 @@
     <LINK href="styles.css" rel="stylesheet" type="text/css">
     <script language="javascript" type="text/javascript" src="js.js"></script>
 </head>
+
 <body>
+
 <header>
     H&D
 </header>
 
-wählen Sie die gewünschte Stelle aus
+Wählen Sie die gewünschte Stelle aus!
 <br>
 
 <div class="dropdown">
     <button onclick="myFunction()" class="dropbtn">Stellen</button>
     <div id="myDropdown" class="dropdown-content">
-        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+        <input type="text" placeholder="Suche.." id="myInput" onkeyup="filterFunction()">
         <?php
         include_once 'databaseConnection.php';
-
         try {
             $pdo = db_connect();
         } catch (PDOException $e) {
             echo "Database Error: " . $e->getMessage();
         }
-
         echo '<form method="post" action="id.php">';
         // Jobs aus der Datenbank auslesen
         $stmt = $pdo->query("SELECT * FROM jobs");
         while ($row = $stmt->fetch()) {
-            echo '<button class="button1" type="submit" name="sent" value="'.$row['name'].'">' . $row['name'] . '</button><br>';
+            echo '<button class="button1" type="submit" name="sent" value="' . $row['name'] . '">' . $row['name'] . '</button><br>';
         }
         echo '</form>';
-
         // Close Connection
         $pdo = null;
         ?>
@@ -42,4 +41,4 @@ wählen Sie die gewünschte Stelle aus
 
 </div>
 </body>
-
+</html>

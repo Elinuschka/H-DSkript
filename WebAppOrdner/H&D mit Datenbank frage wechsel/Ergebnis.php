@@ -10,26 +10,29 @@
     <h2>Bewerbung Ende</h2>
 </header>
 <h3>Ihre Antworten wurden ausgwertet und versendet. Vielen Dank für Ihre Teilnahme!</h3><br>
-<h3>Ihr Ergebnis:</h3>
+
 
 <?php
 session_start();
-$_SESSION["id"] = $_GET["id"];
+$job = $_SESSION["job"];
+$id = $_SESSION["id"];
 $score = $_SESSION["score"];
 $results = $_SESSION["results"];
-
-echo($_SESSION["id"]);
-
+$to = 'nobody@example.com';
+$subject = $id;
+$message = " ID: " . $id . "\n Stelle: " . $job . "\n\n Ergebnis: \n";
 $maxAnswers = count($results);
 $scorePercentage = $score / $maxAnswers * 100;
-
 foreach ($results as $result) {
-    echo $result;
-    echo '<br><br>';
+    $message .= $result;
+    $message .= "\n";
 }
 
-echo '<h4>Sie haben ' . $score . ' von ' . $maxAnswers . ' Fragen richtig beantwortet.';
-echo '<br> Das entspricht ' . $scorePercentage . '%.</h4>';
+$message .= "\n \n   Der Bewerber hat " . $score . " von " . $maxAnswers . " Fragen richtig beantwortet.";
+$message .= "\n   Das entspricht " . $scorePercentage . "%\n";
+
+
+mail($to, $subject, $message);
 ?>
 
 </body>

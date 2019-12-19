@@ -1,7 +1,7 @@
 <?php
-
 // Connect to a MySQL database and create a PDO Object
-function db_connect() {
+function db_connect()
+{
     $dsn = 'mysql:host=localhost;dbname=cas;charset=utf8';
     $user = 'root';
     $password = '';
@@ -13,14 +13,16 @@ function db_connect() {
 }
 
 // jobID abrufen
-function getJobID ($jobName, $pdo) {
+function getJobID($jobName, $pdo)
+{
     $jobID = $pdo->query("SELECT ID FROM jobs WHERE name = '" . $jobName . "';")->fetchAll();
     foreach ($jobID as $row) {
         return $row['ID'];
     }
 }
 
-function getCategorieIDs ($jobID, $pdo) {
+function getCategorieIDs($jobID, $pdo)
+{
     $kategorieString = '';
     $kategorieIDs = $pdo->query("SELECT kategorieID FROM jobkategorie WHERE jobID = '" . $jobID . "'")->fetchAll();
     foreach ($kategorieIDs as $subArray) {
@@ -30,4 +32,5 @@ function getCategorieIDs ($jobID, $pdo) {
     }
     return rtrim($kategorieString, ", ");
 }
+
 ?>
